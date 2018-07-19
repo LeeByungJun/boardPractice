@@ -6,10 +6,8 @@
 	<title>Home</title>
 </head>
 <body>
-<h1>
-	Hello world!  
-</h1>
-
-<P>  The time on the server is ${serverTime}. </P>
+<div style="text-align:center;">
+	<h1> 게시판 만들어보기  </h1>
+</div>
 </body>
 </html>
