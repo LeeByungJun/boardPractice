@@ -6,8 +6,6 @@
 	<title>Home</title>
 </head>
 <body>
-<div style="text-align:center;">
-	<h1> 게시판 만들어보기  </h1>
-</div>
+	<%@ include file = "/WEB-INF/views/A3.Common/header.jsp" %>
 </body>
 </html>
