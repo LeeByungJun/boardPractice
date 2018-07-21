@@ -1,8 +1,11 @@
 package com.kh.fuck.board.model.service;
 
-import org.springframework.stereotype.Service;
+import java.util.List;
 
-@Service("boardService")
-public class BoardService {
+import com.kh.fuck.board.model.vo.Board;
+
+public interface BoardService {
+
+	public abstract List<Board> selectAllLbjBoard();
 	
 }
