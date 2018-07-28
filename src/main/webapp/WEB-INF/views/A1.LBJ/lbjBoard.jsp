@@ -13,6 +13,11 @@
 </head>
 <body>
 	<%@ include file = "/WEB-INF/views/A3.Common/header.jsp" %>
+	<script type="text/javascript">
+		function fnBoardWrite(){
+			location.href="lbjGoBoardWrite";
+		}
+	</script>
 	<div class="container">
 		<h2>병준이 게시판 연습</h2>
 		<table class="table table-hover">
@@ -26,6 +31,7 @@
 					<td class="lbjTd">${board.lbj_bview}</td>
 				</tr>
 			</c:forEach>
+			<tr><td colspan="5" style="text-align:right;"><button class="btn btn-danger" onclick="fnBoardWrite();">글쓰기</button></td></tr>
 			<!-- <tr><td class="lbjTd">1</td><td class="lbjTd">사하라사막에 대하여</td><td class="lbjTd">낙타</td><td class="lbjTd">2018/07/20</td><td class="lbjTd">31</td></tr>
 			<tr><td class="lbjTd">2</td><td class="lbjTd">고비사막에 대하여</td><td class="lbjTd">낙타</td><td class="lbjTd">2018/07/21</td><td class="lbjTd">15</td></tr>
 		 --></table>
