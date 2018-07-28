@@ -17,7 +17,8 @@
 <body>
 	<div style="text-align:center;">
 	<h1> 게시판 만들어보기  </h1>
-	<button class="btn btn-info" onclick="">지석햄 게시판</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<button class="btn btn-info" onclick="location.href='cjsmovigpage'">지석햄 게시판</button>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 	<button class="btn btn-success" onclick="goLbjBoard();">병주니 게시판</button>
 	</div>
 </body>

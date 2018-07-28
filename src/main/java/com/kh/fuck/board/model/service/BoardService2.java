@@ -4,7 +4,8 @@ import java.util.List;
 
 import com.kh.fuck.board.model.vo.Board;
 
-public interface BoardService {
+public interface BoardService2{
 
-	public abstract List<Board> selectAllLbjBoard();
+	public abstract List<Board> selectAllcjsBoard();
+	
 }

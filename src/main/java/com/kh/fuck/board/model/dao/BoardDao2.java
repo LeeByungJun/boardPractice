@@ -8,29 +8,13 @@ import org.springframework.stereotype.Repository;
 
 import com.kh.fuck.board.model.vo.Board;
 
-@Repository("boardDao")
-public class BoardDao {
+@Repository("boardDao2")
+public class BoardDao2 {
 	
 	@Autowired
 	private SqlSessionTemplate sqlSession;
 
-	public List<Board> selectAllLbjBoard() {
-		return sqlSession.selectList("selectAllLbjBoard");
+	public List<Board> selectAllcjsBoard() {
+	return sqlSession.selectList("selectAllcjsBoard");
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	////지석쓰
-	
-	
-	
-	
-	
 }

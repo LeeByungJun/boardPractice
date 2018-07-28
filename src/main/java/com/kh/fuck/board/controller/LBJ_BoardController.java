@@ -25,4 +25,7 @@ public class LBJ_BoardController extends PagingController{
 		mv.setViewName("A1.LBJ/lbjBoard");
 		return mv;
 	}
+	
+	
+	
 }
