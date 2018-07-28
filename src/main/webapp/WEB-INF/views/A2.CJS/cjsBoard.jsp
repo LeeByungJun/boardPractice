@@ -24,17 +24,42 @@ border: solid black;
 <td class="cjsTd">글번호</td>
 <td class="cjsTd">제목</td>
 <td class="cjsTd">작성자</td>
-<td class="cjsTd">작성일</td>
+<td class="cjsTd">내용</td>
 <td class="cjsTd">조회수</td>
+<td class="cjsTd">첨부파일여부</td>
+<td class="cjsTd">작성일</td>
 </tr>
 <tbody>
+<c:forEach items="${cjaboard}" var="i" begin="">
+<tr>
+<td>${i.cjs_bno}</td>
+<td>${i.cjs_btitle}</td>
+<td>${i.cjs_bwriter}</td>
+<td>${i.cjs_bcontent}</td>
+<td>${i.cjs_bview}</td>
+<td>
+<c:if test="${i.cjs_bfile eq null}">없음</c:if>
+<c:if test="${i.cjs_bfile ne null}">있음.</c:if>
+</td>
 
+ 
+<td>${i.cjs_bdate}</td>
+</tr>
+</c:forEach>
 </tbody>
-</table>
+</table> 
 </center> 
-
-${cjaboard}
-
+<!-- cjs_bno --> 
+<!--  cjs_btitle -->
+<!-- cjs_bwriter -->
+<!-- cjs_bcontent -->
+<!-- cjs_bfile=null -->
+<!-- cjs_bview=0 -->
+<!-- cjs_bdate -->
+  
+<button>
+글쓰기
+</button>
 
 </body>
 </html>
