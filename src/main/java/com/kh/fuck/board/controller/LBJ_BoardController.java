@@ -5,6 +5,8 @@ import java.util.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.kh.fuck.board.model.service.BoardService;
@@ -25,7 +27,17 @@ public class LBJ_BoardController extends PagingController{
 		mv.setViewName("A1.LBJ/lbjBoard");
 		return mv;
 	}
+
+	@RequestMapping(value="lbjGoBoardWrite")
+	public String goLbjBoardWrite() {
+		return "A1.LBJ/lbjBoardWrite";
+	}
 	
-	
-	
+	@RequestMapping(value="lbjBoardWrite")/*,method=RequestMethod.POST*/
+	public void lbjBoardWriteMethod(Board board,
+				@RequestParam("file") String fileName) {
+		System.out.println("file = " + fileName);
+		System.out.println("Board = " + board);
+	}
+
 }
